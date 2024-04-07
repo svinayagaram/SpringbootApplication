@@ -31,7 +31,8 @@ public class TrainController {
         String pricePaid = purchaseRequest.getPricePaid();
 
         // Create the user object
-        User user = new User(firstName,lastName,email,section,pricePaid);
+        User user = new User(firstName, lastName, email,section,pricePaid);
+
         // Purchase the ticket
         User purchasedUser = userService.purchaseTicket(user,section);
 
