@@ -28,7 +28,7 @@ public class TrainController {
         String lastName = purchaseRequest.getUser().getLastName();
         String email = purchaseRequest.getUser().getEmail();
         String section = purchaseRequest.getUser().getSection();
-        String pricePaid = purchaseRequest.getPricePaid();
+        String pricePaid = purchaseRequest.getUser().getPricePaid();
 
         // Create the user object
         User user = new User(firstName, lastName, email,section,pricePaid);
